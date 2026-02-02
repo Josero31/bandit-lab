@@ -24,3 +24,19 @@ Lograr alcanzar el nivel 10 o superior de Bandit para obtener la nota completa, 
 ---
 
 ## Progreso de Niveles
+
+### Bandit Level 0 → Level 1
+**Objetivo:**  
+Encontrar la contraseña para el siguiente nivel en el archivo `readme` ubicado en el directorio home.
+
+**Comandos utilizados:**
+```bash
+ls
+cat readme
+```
+
+**Explicación:**  
+Se listó el contenido del directorio home con `ls` para identificar los archivos presentes. Luego se utilizó `cat readme` para leer el contenido del archivo que contenía la contraseña del siguiente nivel.
+
+**Contraseña obtenida:**  
+`ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
