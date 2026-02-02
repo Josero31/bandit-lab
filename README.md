@@ -151,3 +151,20 @@ Se utilizó el comando `find` desde la raíz (`/`) del sistema para buscar archi
 
 **Contraseña obtenida:**  
 `morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj`
+
+---
+
+### Bandit Level 7 → Level 8
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel almacenada en el archivo `data.txt` junto a la palabra "millionth".
+
+**Comandos utilizados:**
+```bash
+grep millionth data.txt
+```
+
+**Explicación:**  
+El archivo `data.txt` contiene muchas líneas de texto. Se utilizó el comando `grep` para buscar la línea que contiene la palabra "millionth". Este comando filtró todas las líneas y mostró únicamente la que coincide con el patrón buscado, revelando la contraseña.
+
+**Contraseña obtenida:**  
+`dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`
