@@ -202,3 +202,12 @@ El archivo `data.txt` contiene principalmente datos binarios no legibles. Se uti
 
 **Contraseña obtenida:**  
 `FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey`
+
+---
+
+## Referencias y Recursos
+
+Durante el desarrollo de este laboratorio se consultaron los siguientes recursos:
+
+- **Stack Overflow:** [https://stackoverflow.com/](https://stackoverflow.com/) - Plataforma de consulta para resolución de dudas técnicas y comandos de Linux.
+- **Evidencia Visual:** El archivo `imagenes niveles lab 1.pdf` contiene capturas de pantalla de todos los niveles completados como evidencia del trabajo realizado.
