@@ -185,3 +185,20 @@ El archivo `data.txt` contiene múltiples líneas, muchas de ellas repetidas. Pa
 
 **Contraseña obtenida:**  
 `4CKMh1JI91bUIZZPXDqGanal4xvAg0JM`
+
+---
+
+### Bandit Level 9 → Level 10
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel almacenada en el archivo `data.txt`, en una de las pocas cadenas legibles por humanos, precedida por varios caracteres "=".
+
+**Comandos utilizados:**
+```bash
+strings data.txt | grep ===
+```
+
+**Explicación:**  
+El archivo `data.txt` contiene principalmente datos binarios no legibles. Se utilizó el comando `strings` para extraer únicamente las cadenas de texto legibles del archivo. Luego se filtró el resultado con `grep ===` para encontrar las líneas que contienen varios signos "=", donde se encontraba la contraseña.
+
+**Contraseña obtenida:**  
+`FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey`
