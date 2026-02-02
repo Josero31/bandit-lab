@@ -95,3 +95,22 @@ Se navegó al directorio `inhere` usando `cd`. Los archivos ocultos en Linux com
 
 **Contraseña obtenida:**  
 `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`
+
+---
+
+### Bandit Level 4 → Level 5
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel que está almacenada en el único archivo legible por humanos dentro del directorio `inhere`.
+
+**Comandos utilizados:**
+```bash
+cd inhere
+file ./*
+cat ./-file07
+```
+
+**Explicación:**  
+Dentro del directorio `inhere` hay múltiples archivos. Se usó el comando `file ./*` para identificar el tipo de cada archivo. La mayoría contenían datos binarios, pero `-file07` fue identificado como texto ASCII. Se leyó su contenido con `cat ./-file07` para obtener la contraseña.
+
+**Contraseña obtenida:**  
+`4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw`
