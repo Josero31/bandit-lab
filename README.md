@@ -76,3 +76,22 @@ El nombre del archivo contiene espacios, por lo que se debe usar el carácter de
 
 **Contraseña obtenida:**  
 `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`
+
+---
+
+### Bandit Level 3 → Level 4
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel que está almacenada en un archivo oculto dentro del directorio `inhere`.
+
+**Comandos utilizados:**
+```bash
+cd inhere
+ls -la
+cat ...Hiding-From-You
+```
+
+**Explicación:**  
+Se navegó al directorio `inhere` usando `cd`. Los archivos ocultos en Linux comienzan con un punto (`.`), por lo que se usó `ls -la` para listar todos los archivos incluidos los ocultos. El archivo `...Hiding-From-You` fue identificado y leído con `cat`.
+
+**Contraseña obtenida:**  
+`2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`
