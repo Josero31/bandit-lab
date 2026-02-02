@@ -114,3 +114,22 @@ Dentro del directorio `inhere` hay múltiples archivos. Se usó el comando `file
 
 **Contraseña obtenida:**  
 `4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw`
+
+---
+
+### Bandit Level 5 → Level 6
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel almacenada en un archivo dentro del directorio `inhere` que cumple las siguientes propiedades: legible por humanos, tamaño de 1033 bytes y no ejecutable.
+
+**Comandos utilizados:**
+```bash
+cd inhere
+find . -type f -size 1033c ! -executable
+cat ./maybehere07/.file2
+```
+
+**Explicación:**  
+Se utilizó el comando `find` para buscar archivos dentro del directorio `inhere` que cumplieran con los criterios especificados: tipo archivo regular (`-type f`), tamaño exacto de 1033 bytes (`-size 1033c`) y no ejecutable (`! -executable`). El resultado mostró que el archivo buscado era `./maybehere07/.file2`, el cual se leyó con `cat`.
+
+**Contraseña obtenida:**  
+`HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`
