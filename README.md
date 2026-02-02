@@ -40,3 +40,21 @@ Se listó el contenido del directorio home con `ls` para identificar los archivo
 
 **Contraseña obtenida:**  
 `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
+
+---
+
+### Bandit Level 1 → Level 2
+**Objetivo:**  
+Leer la contraseña del siguiente nivel almacenada en un archivo llamado `-` en el directorio home.
+
+**Comandos utilizados:**
+```bash
+ls
+cat ./-
+```
+
+**Explicación:**  
+El archivo tiene el nombre especial `-` que puede ser interpretado como un argumento por la terminal. Para leerlo correctamente, se debe especificar la ruta relativa usando `./` antes del nombre del archivo, de manera que el comando `cat` lo interprete como un archivo y no como una opción.
+
+**Contraseña obtenida:**  
+`263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
