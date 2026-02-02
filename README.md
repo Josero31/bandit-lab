@@ -168,3 +168,20 @@ El archivo `data.txt` contiene muchas líneas de texto. Se utilizó el comando `
 
 **Contraseña obtenida:**  
 `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`
+
+---
+
+### Bandit Level 8 → Level 9
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel almacenada en el archivo `data.txt`, siendo la única línea de texto que aparece solo una vez.
+
+**Comandos utilizados:**
+```bash
+sort data.txt | uniq -u
+```
+
+**Explicación:**  
+El archivo `data.txt` contiene múltiples líneas, muchas de ellas repetidas. Para encontrar la línea única, primero se ordenó el archivo con `sort`, lo que agrupa las líneas duplicadas de forma consecutiva. Luego se usó `uniq -u` para mostrar únicamente las líneas que aparecen una sola vez, revelando la contraseña.
+
+**Contraseña obtenida:**  
+`4CKMh1JI91bUIZZPXDqGanal4xvAg0JM`
