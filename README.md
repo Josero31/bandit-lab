@@ -58,3 +58,21 @@ El archivo tiene el nombre especial `-` que puede ser interpretado como un argum
 
 **Contraseña obtenida:**  
 `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
+
+---
+
+### Bandit Level 2 → Level 3
+**Objetivo:**  
+Leer la contraseña del siguiente nivel almacenada en un archivo llamado `spaces in this filename` en el directorio home.
+
+**Comandos utilizados:**
+```bash
+ls
+cat spaces\ in\ this\ filename
+```
+
+**Explicación:**  
+El nombre del archivo contiene espacios, por lo que se debe usar el carácter de escape `\` antes de cada espacio para que la terminal interprete el nombre completo como un único argumento. Alternativamente, se pueden usar comillas: `cat "spaces in this filename"`.
+
+**Contraseña obtenida:**  
+`MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`
