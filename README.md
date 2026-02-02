@@ -133,3 +133,21 @@ Se utilizó el comando `find` para buscar archivos dentro del directorio `inhere
 
 **Contraseña obtenida:**  
 `HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`
+
+---
+
+### Bandit Level 6 → Level 7
+**Objetivo:**  
+Encontrar la contraseña del siguiente nivel almacenada en algún lugar del servidor con las siguientes propiedades: propiedad del usuario bandit7, propiedad del grupo bandit6 y tamaño de 33 bytes.
+
+**Comandos utilizados:**
+```bash
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
+```
+
+**Explicación:**  
+Se utilizó el comando `find` desde la raíz (`/`) del sistema para buscar archivos que pertenecieran al usuario `bandit7` (`-user bandit7`), al grupo `bandit6` (`-group bandit6`) y tuvieran un tamaño de 33 bytes (`-size 33c`). Se redirigió el error estándar a `/dev/null` (`2>/dev/null`) para evitar mensajes de permisos denegados. El archivo encontrado fue `/var/lib/dpkg/info/bandit7.password`.
+
+**Contraseña obtenida:**  
+`morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj`
